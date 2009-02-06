@@ -1493,6 +1493,7 @@ The commands are sorted on the non-optional part of their name.
 |:tabnext|	:tabn[ext]	go to next tab page
 |:tabonly|	:tabo[nly]	close all tab pages except the current one
 |:tabprevious|	:tabp[revious]	go to previous tab page
+|:tabprework|	:tabprework	go to previous working tab page
 |:tabrewind|	:tabr[ewind]	got to first tab page
 |:tabs|		:tabs		list the tab pages and what they contain
 |:tab|		:tab		create new tab when opening new window
