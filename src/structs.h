@@ -1630,6 +1630,7 @@ typedef struct tabpage_S tabpage_T;
 struct tabpage_S
 {
     tabpage_T	    *tp_next;	    /* next tabpage or NULL */
+    tabpage_T       *tp_previous;   /* previous tabpage or NULL */
     frame_T	    *tp_topframe;   /* topframe for the windows */
     win_T	    *tp_curwin;	    /* current window in this Tab page */
     win_T	    *tp_prevwin;    /* previous window in this Tab page */
