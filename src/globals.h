@@ -549,6 +549,7 @@ EXTERN frame_T	*topframe;	/* top of the window frame tree */
  */
 EXTERN tabpage_T    *first_tabpage;
 EXTERN tabpage_T    *curtab;
+EXTERN tabpage_T    *pretab;
 EXTERN int	    redraw_tabline INIT(= FALSE);  /* need to redraw tabline */
 #endif
 

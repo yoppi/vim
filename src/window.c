@@ -3315,6 +3315,7 @@ win_new_tabpage(after)
     int		after;
 {
     tabpage_T	*tp = curtab;
+    tabpage_T   *pre = pretab;
     tabpage_T	*newtp;
     int		n;
 
@@ -3328,6 +3329,7 @@ win_new_tabpage(after)
 	vim_free(newtp);
 	return FAIL;
     }
+    pretab = tp;
     curtab = newtp;
 
     /* Create a new empty window. */
@@ -3669,6 +3671,7 @@ goto_tabpage(n)
 	}
     }
 
+    pretab = curtab;
     goto_tabpage_tp(tp);
 
 #ifdef FEAT_GUI_TABLINE

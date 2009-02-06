@@ -7204,6 +7204,9 @@ ex_tabnext(eap)
 	case CMD_tabNext:
 	    goto_tabpage(eap->addr_count == 0 ? -1 : -(int)eap->line2);
 	    break;
+        case CMD_tabprework:
+            /* search from 'No' of pretab following first tabpage */
+            goto_tabpage(tabpage_index(pretab));
 	default: /* CMD_tabnext */
 	    goto_tabpage(eap->addr_count == 0 ? 0 : (int)eap->line2);
 	    break;
