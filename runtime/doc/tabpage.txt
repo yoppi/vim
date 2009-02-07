@@ -152,6 +152,10 @@ gT		Go to the previous tab page.  Wraps around from the first one
 {count}gT	Go {count} tab pages back.  Wraps around from the first one
 		to the last one.
 
+:tabprework				*:tabprework*
+		Go to the previous working tab page.
+	
+
 :tabr[ewind]			*:tabfir* *:tabfirst* *:tabr* *:tabrewind*
 :tabfir[st]	Go to the first tab page.
 
