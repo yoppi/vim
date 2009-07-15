@@ -217,7 +217,7 @@ if &filetype == 'changelog'
   endfunction
 
   if exists(":NewChangelogEntry") != 2
-    map <buffer> <silent> <Leader>o <Esc>:call <SID>new_changelog_entry()<CR>
+    noremap <buffer> <silent> <Leader>o <Esc>:call <SID>new_changelog_entry()<CR>
     command! -nargs=0 NewChangelogEntry call s:new_changelog_entry()
   endif
 
@@ -237,7 +237,7 @@ if &filetype == 'changelog'
   unlet s:cpo_save
 else
   " Add the Changelog opening mapping
-  nmap <silent> <Leader>o :call <SID>open_changelog()<CR>
+  nnoremap <silent> <Leader>o :call <SID>open_changelog()<CR>
 
   function! s:open_changelog()
     if !filereadable('ChangeLog')
